@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Boys Hostel Standard 3 Sharing",
+    "area": "City Center",
+    "price": 4500,
+    "sharing": 3,
+    "subtitle": "Boys hostel \u2022 City Center \u2022 Wi\u2011Fi",
+    "features": ["3 beds per room", "Attached washroom", "High\u2011speed Wi\u2011Fi", "Daily cleaning"],
+    "tag": "Boys"
+  },
+  {
+    "name": "Girls Hostel Premium Single",
+    "area": "Premium Zone",
+    "price": 9500,
+    "sharing": 1,
+    "subtitle": "Girls hostel \u2022 Premium Zone \u2022 AC",
+    "features": ["Private room", "AC", "Common lounge", "On\u2011call support"],
+    "tag": "Girls"
+  },
+  {
+    "name": "Family 2 BHK Apartment",
+    "area": "Family Enclave",
+    "price": 17000,
+    "sharing": 2,
+    "subtitle": "Family stay \u2022 Park facing \u2022 Calm area",
+    "features": ["2 bedrooms", "Park view balcony", "Kids play area", "Gated community"],
+    "tag": "Family"
+  },
+  {
+    "name": "1 BHK City Apartment",
+    "area": "City Center",
+    "price": 12000,
+    "sharing": 1,
+    "subtitle": "Apartment \u2022 Furnished \u2022 Balcony",
+    "features": ["1 BHK", "Furnished", "Balcony", "Lift & security"],
+    "tag": "Apartment"
+  },
+  {
+    "name": "Girls Hostel 2 Sharing",
+    "area": "College Road",
+    "price": 6500,
+    "sharing": 2,
+    "subtitle": "Girls hostel \u2022 Near campus",
+    "features": ["2 beds per room", "All meals", "Security & CCTV", "Laundry service"],
+    "tag": "Girls"
+  },
+  {
+    "name": "Family 3 BHK Green Residency",
+    "area": "Green Residency",
+    "price": 22000,
+    "sharing": 3,
+    "subtitle": "Family stay \u2022 Garden view",
+    "features": ["3 bedrooms", "Garden view", "Parking", "24x7 security"],
+    "tag": "Family"
+  },
+  {
+    "name": "Boys Hostel Budget 4 Sharing",
+    "area": "Old Town",
+    "price": 3500,
+    "sharing": 4,
+    "subtitle": "Boys hostel \u2022 Basic amenities",
+    "features": ["4 beds per room", "Common washroom", "Free Wi\u2011Fi", "Weekly cleaning"],
+    "tag": "Boys"
+  },
+  {
+    "name": "Studio Apartment Business Hub",
+    "area": "Business District",
+    "price": 10000,
+    "sharing": 1,
+    "subtitle": "Apartment \u2022 Compact studio",
+    "features": ["Open layout", "Kitchenette", "Work desk", "Wi\u2011Fi"],
+    "tag": "Apartment"
+  },
+  {
+    "name": "Girls Hostel Fitness Stay",
+    "area": "Sports Complex",
+    "price": 7900,
+    "sharing": 2,
+    "subtitle": "Girls hostel \u2022 Gym access",
+    "features": ["2 beds per room", "On\u2011site gym", "Jogging track", "Healthy meals"],
+    "tag": "Girls"
+  },
+  {
+    "name": "Family Row House",
+    "area": "Suburb Lane",
+    "price": 20000,
+    "sharing": 3,
+    "subtitle": "Family stay \u2022 Row house",
+    "features": ["3 bedrooms", "Backyard", "Parking", "Quiet area"],
+    "tag": "Family"
+  },
+  {
+    "name": "Service Apartment for Pros",
+    "area": "IT Park",
+    "price": 20000,
+    "sharing": 2,
+    "subtitle": "Apartment \u2022 Service apartment",
+    "features": ["Fully furnished", "Housekeeping", "Wi\u2011Fi & TV", "Near offices"],
+    "tag": "Apartment"
+  },
+  {
+    "name": "Boys Hostel AC 3 Sharing",
+    "area": "City Center",
+    "price": 5500,
+    "sharing": 3,
+    "subtitle": "Boys hostel \u2022 AC \u2022 Study table",
+    "features": ["3 beds per room", "AC", "Wardrobes", "24x7 water"],
+    "tag": "Boys"
+  },
+  {
+    "name": "Girls Hostel City View 3 Sharing",
+    "area": "Skyline Road",
+    "price": 6400,
+    "sharing": 3,
+    "subtitle": "Girls hostel \u2022 City view balcony",
+    "features": ["3 beds per room", "City view balcony", "Wi\u2011Fi", "Daily cleaning"],
+    "tag": "Girls"
+  },
+  {
+    "name": "Family 2 BHK Lakeside",
+    "area": "Lake View",
+    "price": 19000,
+    "sharing": 2,
+    "subtitle": "Family stay \u2022 Lake view",
+    "features": ["2 bedrooms", "Lake facing balcony", "Jogging track", "Kids area"],
+    "tag": "Family"
+  },
+  {
+    "name": "Compact 2 BHK Apartment",
+    "area": "Market Area",
+    "price": 16000,
+    "sharing": 2,
+    "subtitle": "Apartment \u2022 Central location",
+    "features": ["2 bedrooms", "Shops nearby", "Good connectivity", "Modern interiors"],
+    "tag": "Apartment"
+  },
+  {
+    "name": "Terrace Lounge Shared Stay",
+    "area": "Rooftop Block",
+    "price": 9300,
+    "sharing": 2,
+    "subtitle": "Shared stay \u2022 Terrace lounge",
+    "features": ["2 beds per room", "Terrace lounge", "Evening hangout", "Wi\u2011Fi"],
+    "tag": "Mixed"
+  }
+]
+

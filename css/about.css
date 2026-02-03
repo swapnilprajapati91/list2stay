@@ -1,0 +1,322 @@
+/**
+ * About Section Styles
+ * Attractive about section with animations and photo gallery
+ */
+
+.about-section {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text__block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-text__block.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-text__heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.about-text__block p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.about-gallery__item {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-gallery__item.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-gallery__image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-gallery__image-wrap:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(109, 94, 246, 0.3);
+}
+
+.about-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about-gallery__image-wrap:hover .about-gallery__image {
+  transform: scale(1.1);
+}
+
+.about-gallery__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, transparent 100%);
+  padding: 1.5rem 1rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.about-gallery__image-wrap:hover .about-gallery__overlay {
+  transform: translateY(0);
+}
+
+.about-gallery__label {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about-feature {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-feature.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.about-feature:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(109, 94, 246, 0.5);
+}
+
+.about-feature__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(109, 94, 246, 0.2), rgba(61, 215, 217, 0.2));
+  color: rgba(109, 94, 246, 1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-feature:hover .about-feature__icon {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, rgba(109, 94, 246, 0.3), rgba(61, 215, 217, 0.3));
+}
+
+.about-feature__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.about-feature__text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-gallery {
+    order: -1;
+  }
+
+  .about-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 2.5rem 0;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .about-text {
+    gap: 1.5rem;
+  }
+
+  .about-text__heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text__block p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .about-feature {
+    padding: 1.25rem;
+  }
+
+  .about-feature__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-feature__title {
+    font-size: 1rem;
+  }
+
+  .about-feature__text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation delays for staggered effect */
+.about-text__block:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.about-text__block:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.about-text__block:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.about-gallery__item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.about-gallery__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.about-gallery__item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.about-gallery__item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.about-feature:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.about-feature:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.about-feature:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.about-feature:nth-child(4) {
+  transition-delay: 0.4s;
+}

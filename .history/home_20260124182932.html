@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List2Stay — Home</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="home">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./home.html">
+          <img class="brand__logo" src="./assets/logo.png" alt="List2Stay logo" />
+          <span class="brand__text">List2Stay</span>
+        </a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#wishlist" class="nav-wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            Wishlist
+          </a>
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button type="button" class="search-btn" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a class="btn btn--ghost header-login" href="./login.html">Login</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="./login.html" class="mobile-login">Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1>Your startup website is live.</h1>
+          <p class="muted">
+            This is the main website page that opens after your intro video ends.
+            Replace this content with your real startup details.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get started</a>
+            <a class="btn btn--ghost" href="./index.html">Watch intro again</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section__inner">
+          <h2>Features</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Fast</h3>
+              <p class="muted">Lightweight pages, quick loading.</p>
+            </article>
+            <article class="card">
+              <h3>Modern</h3>
+              <p class="muted">Clean UI with responsive layout.</p>
+            </article>
+            <article class="card">
+              <h3>Simple</h3>
+              <p class="muted">Easy to customize content and branding.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section__inner">
+          <h2>About</h2>
+          <p class="muted">
+            Write a short story about your startup here: problem, solution,
+            mission, and what makes you different.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__inner">
+          <h2>Contact</h2>
+          <p class="muted">Add your email/phone/WhatsApp links here.</p>
+          <div class="contact">
+            <a class="btn btn--primary" href="mailto:hello@list2stay.com">Email</a>
+            <a class="btn btn--ghost" href="tel:+910000000000">Call</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner muted">
+        © <span id="year"></span> List2Stay. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const menuOverlay = document.querySelector('.mobile-menu-overlay');
+
+      menuToggle.addEventListener('click', () => {
+        menuOverlay.classList.toggle('active');
+      });
+
+      // Close menu when clicking overlay
+      menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+          menuOverlay.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>

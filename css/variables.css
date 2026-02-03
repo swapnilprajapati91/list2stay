@@ -1,0 +1,37 @@
+/**
+ * CSS Variables - Design Tokens
+ * Centralized color scheme and design system variables
+ */
+
+:root {
+  /* Colors */
+  --bg: #070A12;
+  --fg: #EEF2FF;
+  --muted: rgba(238, 242, 255, 0.72);
+  --card: rgba(255, 255, 255, 0.06);
+  --stroke: rgba(255, 255, 255, 0.12);
+  
+  /* Brand Colors */
+  --primary: #6D5EF6;
+  --primary2: #3DD7D9;
+  
+  /* Effects */
+  --shadow: 0 16px 60px rgba(0, 0, 0, 0.5);
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+}

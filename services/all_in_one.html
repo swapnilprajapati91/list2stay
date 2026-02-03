@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List2Stay — All In One Stays</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/boys-hostel.css" />
+  </head>
+  <body class="service-page boys-hostel-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../pages/home.html">
+          <img class="brand__logo" src="../assets/logo.png" alt="List2Stay logo" />
+          <span class="brand__text">List2Stay</span>
+        </a>
+        <nav class="nav">
+          <a href="../pages/home.html#features">Features</a>
+          <a href="../pages/home.html#about">About</a>
+          <a href="../pages/home.html#contact">Contact</a>
+          <a href="../pages/wishlist.html" class="nav-wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            Wishlist
+          </a>
+        </nav>
+        <a class="btn btn--ghost header-login" href="../pages/login.html">Login</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="../pages/home.html#features">Features</a>
+            <a href="../pages/home.html#about">About</a>
+            <a href="../pages/home.html#contact">Contact</a>
+            <a href="../pages/login.html" class="mobile-login">Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="section hero service-hero">
+        <div class="section__inner">
+          <h1>All In One Listings</h1>
+          <p class="muted">
+            See boys hostel, girls hostel, family stays and apartments all together at one place.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <h2 class="room-suggestions__title">Quick suggestions</h2>
+          <p class="muted room-suggestions__subtitle">
+            Mix of hostels and apartments students and families book most often.
+          </p>
+          <div class="room-suggestions__wrapper">
+            <button
+              type="button"
+              class="room-suggestions__btn room-suggestions__btn--left"
+              id="roomSuggestionsPrev"
+              aria-label="Scroll left"
+            >
+              ‹
+            </button>
+            <div class="room-suggestions__scroller" id="roomSuggestionsScroller">
+              <div class="room-suggestion room-suggestion--box">
+                <div class="room-suggestion__image-wrap">
+                  <img src="../assets/logo.png" alt="Boys Hostel • City Center" class="room-suggestion__image" />
+                  <div class="room-suggestion__price">₹4,500 / month</div>
+                </div>
+              </div>
+              <div class="room-suggestion room-suggestion--box">
+                <div class="room-suggestion__image-wrap">
+                  <img src="../assets/logo.png" alt="Girls Hostel • Premium Zone" class="room-suggestion__image" />
+                  <div class="room-suggestion__price">₹9,500 / month</div>
+                </div>
+              </div>
+              <div class="room-suggestion room-suggestion--box">
+                <div class="room-suggestion__image-wrap">
+                  <img src="../assets/logo.png" alt="Family 2 BHK" class="room-suggestion__image" />
+                  <div class="room-suggestion__price">₹17,000 / month</div>
+                </div>
+              </div>
+              <div class="room-suggestion room-suggestion--box">
+                <div class="room-suggestion__image-wrap">
+                  <img src="../assets/logo.png" alt="1 BHK Apartment" class="room-suggestion__image" />
+                  <div class="room-suggestion__price">₹12,000 / month</div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="room-suggestions__btn room-suggestions__btn--right"
+              id="roomSuggestionsNext"
+              aria-label="Scroll right"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <div class="location-search-wrapper">
+            <div class="location-search-bar">
+              <input
+                type="text"
+                class="location-search-input"
+                id="boysHostelSearch"
+                placeholder="Search stay type, area or price..."
+                autocomplete="off"
+              />
+              <button type="button" class="location-search-btn" aria-label="Search stays">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Filter dropdown on right side of location search -->
+            <div class="filter-dropdown">
+              <button
+                type="button"
+                id="filterDropdownToggle"
+                class="btn btn--ghost filter-dropdown__toggle"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+                <span>Filter</span>
+              </button>
+
+              <div id="filterDropdownPanel" class="filter-box">
+                <h3 class="filter-box__title">
+                  Filters
+                </h3>
+                <div class="filter-box__group">
+                  <p class="filter-box__label">
+                    Sharing / BHK
+                  </p>
+                  <label class="filter-box__option">
+                    <input type="checkbox" class="filter-sharing" value="1" />
+                    Single / 1 BHK
+                  </label>
+                  <label class="filter-box__option">
+                    <input type="checkbox" class="filter-sharing" value="2" />
+                    2 sharing / 2 BHK
+                  </label>
+                  <label class="filter-box__option">
+                    <input type="checkbox" class="filter-sharing" value="3" />
+                    3+ sharing / 3 BHK
+                  </label>
+                </div>
+
+                <div class="filter-box__group">
+                  <p class="filter-box__label">
+                    Budget (₹/month)
+                  </p>
+                  <label class="filter-box__option">
+                    <input type="radio" name="priceRange" class="filter-price" value="all" checked />
+                    All
+                  </label>
+                  <label class="filter-box__option">
+                    <input type="radio" name="priceRange" class="filter-price" value="lt6000" />
+                    Below 6,000
+                  </label>
+                  <label class="filter-box__option">
+                    <input type="radio" name="priceRange" class="filter-price" value="6000to8000" />
+                    6,000 – 8,000
+                  </label>
+                  <label class="filter-box__option">
+                    <input type="radio" name="priceRange" class="filter-price" value="gt8000" />
+                    Above 8,000
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cards product-grid"
+            id="boysHostelList"
+            data-rooms-url="../data/all-in-one-rooms.json"
+          ></div>
+
+          <!-- Pagination (page numbers) -->
+          <nav class="pagination" id="boysHostelPagination" aria-label="All in one list pagination"></nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner muted">
+        © <span id="year"></span> List2Stay. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../js/boys-hostel.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+  </body>
+</html>
+

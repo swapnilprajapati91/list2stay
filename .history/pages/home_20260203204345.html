@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List2Stay — Home</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+  </head>
+  <body class="home">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./home.html">
+          <img class="brand__logo" src="../assets/logo.png" alt="List2Stay logo" />
+          <span class="brand__text">List2Stay</span>
+        </a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="./wishlist.html" class="nav-wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            Wishlist
+          </a>
+          <div class="search-bar" id="searchBar">
+            <input type="text" class="search-input" placeholder="Search..." id="searchInput" />
+            <button type="button" class="search-btn" id="searchToggle" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a class="btn btn--ghost header-login" href="./login.html">Login</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="./login.html" class="mobile-login">Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <!-- Scroll Progress Indicator -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__text fade-in-up">
+            <h1 class="hero__title">
+              <span class="hero__title-line">Find Your Perfect</span>
+              <span class="hero__title-line hero__title-line--highlight">Stay</span>
+            </h1>
+            <p class="hero__subtitle muted">
+              Verified rooms, transparent pricing, direct owner connections
+            </p>
+          </div>
+          
+          <div class="hero__gallery-wrap fade-in-up" aria-label="Photo gallery">
+            <button class="hero__gallery-btn hero__gallery-btn--left" type="button" aria-label="Scroll left">
+              ‹
+            </button>
+            <div class="hero__gallery">
+              <div class="hero__gallery-track">
+                <!-- Replace these logo images with your actual photos -->
+                <img src="../assets/logo.png" alt="List2Stay preview 1" />
+                <img src="../assets/logo.png" alt="List2Stay preview 2" />
+                <img src="../assets/logo.png" alt="List2Stay preview 3" />
+                <img src="../assets/logo.png" alt="List2Stay preview 4" />
+                <img src="../assets/logo.png" alt="List2Stay preview 5" />
+                <img src="../assets/logo.png" alt="List2Stay preview 6" />
+                <img src="../assets/logo.png" alt="List2Stay preview 7" />
+                <img src="../assets/logo.png" alt="List2Stay preview 8" />
+                <!-- Duplicate first 4 for seamless loop -->
+                <img src="../assets/logo.png" alt="List2Stay preview 1" />
+                <img src="../assets/logo.png" alt="List2Stay preview 2" />
+                <img src="../assets/logo.png" alt="List2Stay preview 3" />
+                <img src="../assets/logo.png" alt="List2Stay preview 4" />
+              </div>
+            </div>
+            <button class="hero__gallery-btn hero__gallery-btn--right" type="button" aria-label="Scroll right">
+              ›
+            </button>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="./login.html">Get started</a>
+            <a class="btn btn--ghost" href="../index.html">Watch intro again</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-search-section">
+        <div class="location-search-section__inner">
+          <div class="location-search-wrapper">
+            <div class="location-search-bar">
+              <svg class="location-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <input 
+                type="text" 
+                class="location-search-input" 
+                id="locationSearchInput"
+                placeholder="Search by location..." 
+                autocomplete="off"
+              />
+              <button type="button" class="location-search-btn" id="locationSearchBtn" aria-label="Search location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </button>
+            </div>
+            <button type="button" class="filter-btn" id="filterBtn" aria-label="Filter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+              <span>Filter</span>
+            </button>
+          </div>
+          <button type="button" class="nearby-btn" id="nearbyBtn" aria-label="Near by me">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+            </svg>
+            <span>Near by me</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="features" class="section services-section">
+        <div class="section__inner">
+          <div class="services-header">
+            <h2 class="services-title">Our Services</h2>
+            <p class="services-subtitle muted">
+              Explore verified accommodations tailored to your needs
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">
+                  <a href="../services/boys_hostel.html">Boys Hostel</a>
+                </h3>
+                <p class="muted service-card__description">
+                  Browse available boys hostel rooms with transparent pricing and details. Select the option that best fits your stay.
+                </p>
+                <a href="../services/boys_hostel.html" class="service-card__link">
+                  Explore <span>→</span>
+                </a>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+
+            <article class="service-card fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">
+                  <a href="../services/girls_hostel.html">Girls Hostel</a>
+                </h3>
+                <p class="muted service-card__description">
+                  Browse available girls hostel rooms with transparent pricing and details. Select the option that best fits your stay.
+                </p>
+                <a href="../services/girls_hostel.html" class="service-card__link">
+                  Explore <span>→</span>
+                </a>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+
+            <article class="service-card fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">
+                  <a href="../services/apartment.html">Apartment</a>
+                </h3>
+                <p class="muted service-card__description">
+                  Browse available apartment rooms with transparent pricing and details. Select the option that best fits your stay.
+                </p>
+                <a href="../services/apartment.html" class="service-card__link">
+                  Explore <span>→</span>
+                </a>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+
+            <article class="service-card fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">
+                  <a href="../services/family_stay.html">Family</a>
+                </h3>
+                <p class="muted service-card__description">
+                  Browse available family stay rooms with transparent pricing and details. Select the option that best fits your stay.
+                </p>
+                <a href="../services/family_stay.html" class="service-card__link">
+                  Explore <span>→</span>
+                </a>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+
+            <article class="service-card fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">
+                  <a href="../services/all_in_one.html">All in One</a>
+                </h3>
+                <p class="muted service-card__description">
+                  Browse available all in one rooms with transparent pricing and details. Select the option that best fits your stay.
+                </p>
+                <a href="../services/all_in_one.html" class="service-card__link">
+                  Explore <span>→</span>
+                </a>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+
+            <article class="service-card service-card--support fade-in">
+              <div class="service-card__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  <line x1="8" y1="9" x2="16" y2="9"></line>
+                  <line x1="8" y1="13" x2="14" y2="13"></line>
+                </svg>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">Support</h3>
+                <p class="muted service-card__description">
+                  24/7 customer support whenever you need. We're here to help you find the perfect stay.
+                </p>
+                <div class="service-card__badge">
+                  <span>24/7 Available</span>
+                </div>
+              </div>
+              <div class="service-card__glow"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section__inner">
+          <div class="about-header">
+            <h2 class="about-title">About List2Stay</h2>
+            <p class="about-subtitle muted">
+              Making stay-search simple, fast, and dependable
+            </p>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <div class="about-text__block fade-in">
+                <h3 class="about-text__heading">Our Mission</h3>
+                <p class="muted">
+                  LIST2STAY is built to solve one common problem — finding a safe, affordable, and trustworthy place to stay without confusion. Many students and travelers struggle with scattered listings, unclear pricing, and unverified information across different platforms.
+                </p>
+              </div>
+
+              <div class="about-text__block fade-in">
+                <h3 class="about-text__heading">What We Offer</h3>
+                <p class="muted">
+                  LIST2STAY brings everything together in one reliable space where users can explore verified rooms, PGs, hostels, and flats with clear details and transparent costs. Our mission is to make the stay-search process simple, fast, and dependable, especially for students and budget users.
+                </p>
+              </div>
+
+              <div class="about-text__block fade-in">
+                <h3 class="about-text__heading">What Makes Us Different</h3>
+                <p class="muted">
+                  What makes us different is our focus on verified listings, direct owner connections, honest pricing, and an easy compare-first experience that helps users make quick and confident decisions.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-gallery">
+              <div class="about-gallery__item fade-in">
+                <div class="about-gallery__image-wrap">
+                  <img src="../assets/logo.png" alt="List2Stay - Verified Listings" class="about-gallery__image" />
+                  <div class="about-gallery__overlay">
+                    <span class="about-gallery__label">Verified Listings</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-gallery__item fade-in">
+                <div class="about-gallery__image-wrap">
+                  <img src="../assets/logo.png" alt="List2Stay - Transparent Pricing" class="about-gallery__image" />
+                  <div class="about-gallery__overlay">
+                    <span class="about-gallery__label">Transparent Pricing</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-gallery__item fade-in">
+                <div class="about-gallery__image-wrap">
+                  <img src="../assets/logo.png" alt="List2Stay - Direct Connections" class="about-gallery__image" />
+                  <div class="about-gallery__overlay">
+                    <span class="about-gallery__label">Direct Connections</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-gallery__item fade-in">
+                <div class="about-gallery__image-wrap">
+                  <img src="../assets/logo.png" alt="List2Stay - Easy Comparison" class="about-gallery__image" />
+                  <div class="about-gallery__overlay">
+                    <span class="about-gallery__label">Easy Comparison</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-features">
+            <div class="about-feature fade-in">
+              <div class="about-feature__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h4 class="about-feature__title">Verified Listings</h4>
+              <p class="muted about-feature__text">All properties are verified for authenticity</p>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h4 class="about-feature__title">Honest Pricing</h4>
+              <p class="muted about-feature__text">No hidden costs, transparent pricing</p>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4 class="about-feature__title">Direct Owner</h4>
+              <p class="muted about-feature__text">Connect directly with property owners</p>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="about-feature__title">Quick Decisions</h4>
+              <p class="muted about-feature__text">Compare and decide with confidence</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="section__inner">
+          <div class="contact-header fade-in">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle muted">
+              Have questions? We're here to help you find the perfect accommodation.
+            </p>
+          </div>
+          
+          <div class="contact-content">
+            <div class="contact-methods fade-in">
+              <a href="mailto:hello@list2stay.com" class="contact-method">
+                <div class="contact-method__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">Email Us</h3>
+                  <p class="contact-method__text muted">hello@list2stay.com</p>
+                </div>
+                <div class="contact-method__arrow">→</div>
+              </a>
+
+              <a href="tel:+910000000000" class="contact-method">
+                <div class="contact-method__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">Call Us</h3>
+                  <p class="contact-method__text muted">+91 00000 00000</p>
+                </div>
+                <div class="contact-method__arrow">→</div>
+              </a>
+
+              <a href="https://wa.me/910000000000" target="_blank" class="contact-method">
+                <div class="contact-method__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">WhatsApp</h3>
+                  <p class="contact-method__text muted">Chat with us instantly</p>
+                </div>
+                <div class="contact-method__arrow">→</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner muted">
+        © <span id="year"></span> List2Stay. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Set current year  s
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/location-search.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="../js/services.js"></script>
+    <script src="../js/animations.js"></script>
+  </body>
+</html>

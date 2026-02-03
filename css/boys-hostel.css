@@ -1,0 +1,281 @@
+/* Suggested rooms section */
+.room-suggestions__subtitle {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.room-suggestions__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Horizontal suggestion boxes – only photo + rate */
+.room-suggestions__scroller {
+  display: flex;
+  gap: 0.9rem;
+  overflow-x: auto;
+  padding: 0.1rem;
+  scroll-behavior: smooth;
+}
+
+.room-suggestion.room-suggestion--box {
+  flex: 0 0 210px;
+  border-radius: 0.4rem; /* more rectangular, less rounded */
+  overflow: hidden;
+  background: #0f172a;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
+
+.room-suggestion__image-wrap {
+  position: relative;
+  width: 100%;
+  height: 120px; /* slightly slimmer rectangle */
+  overflow: hidden;
+}
+
+.room-suggestion__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.room-suggestion.room-suggestion--box:hover .room-suggestion__image {
+  transform: scale(1.04);
+}
+
+.room-suggestion__price {
+  position: absolute;
+  left: 0.55rem;
+  bottom: 0.55rem;
+  background: rgba(15, 23, 42, 0.88);
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Search + filter layout */
+.location-search-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 26px;
+}
+
+.location-search-bar {
+  flex: 1;
+}
+
+.filter-dropdown {
+  position: relative;
+  min-width: 180px;
+}
+
+.filter-dropdown__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filter-box {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  padding: 1rem 1.1rem;
+  min-width: 230px;
+  max-width: 260px;
+  display: none;
+  color: #000000;
+}
+
+.filter-box__title {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.filter-box__group {
+  margin-bottom: 0.75rem;
+  color: #000000;
+}
+
+.filter-box__label {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  color: #000000;
+}
+
+.filter-box__option {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+  color: #000000;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__list {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.pagination__btn {
+  min-width: 32px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.pagination__btn:hover {
+  background: rgba(30, 64, 175, 0.85);
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+.pagination__btn--active {
+  background: #f97316;
+  border-color: #f97316;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.pagination__btn--disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Mobile tweaks: make suggestion boxes fit nicely in small screens */
+@media (max-width: 640px) {
+  .room-suggestions__wrapper {
+    align-items: flex-start;
+  }
+
+  .room-suggestion.room-suggestion--box {
+    flex: 0 0 70vw;
+  }
+
+  .room-suggestion__image-wrap {
+    height: 140px; /* taller image on mobile so photo doesn't look cut */
+  }
+}
+
+/* Boys hostel - main list product cards */
+.boys-hostel-page .product-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.boys-hostel-page .product-card__image-wrap {
+  flex: 0 0 38%;
+  max-width: 38%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.boys-hostel-page .product-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* prevent image from being cut */
+  display: block;
+  background: #020617; /* subtle background behind logo/photo */
+}
+
+.boys-hostel-page .product-card__body {
+  flex: 1;
+  padding: 0.9rem 1rem 1rem;
+}
+
+/* Product card actions (Book now & Wishlist buttons) */
+.boys-hostel-page .product-card__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.boys-hostel-page .product-card__actions .btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  height: auto;
+  min-height: 38px;
+}
+
+/* Mobile: stack image on top, text below */
+@media (max-width: 760px) {
+  .boys-hostel-page .product-card {
+    display: block;
+  }
+
+  .boys-hostel-page .product-card__image-wrap {
+    max-width: 100%;
+    width: 100%;
+    height: 130px;
+  }
+
+  .boys-hostel-page .product-card__body {
+    padding: 0.75rem 0.85rem 0.9rem;
+  }
+
+  .boys-hostel-page .product-card__actions {
+    gap: 0.5rem;
+    margin-top: 0.65rem;
+  }
+
+  .boys-hostel-page .product-card__actions .btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8rem;
+    min-height: 36px;
+  }
+}
+
+/* Wishlist empty state */
+.wishlist-empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--fg);
+}
+
+.wishlist-empty__icon {
+  margin: 0 auto 1.5rem;
+  width: 64px;
+  height: 64px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.wishlist-empty__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+.wishlist-empty__text {
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

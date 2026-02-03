@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List2Stay</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="splash">
+    <main class="splash__container" aria-label="Intro video screen">
+      <video
+        id="introVideo"
+        class="splash__video"
+        playsinline
+        muted 
+        autoplay
+        preload="auto"
+        poster="./assets/logo.png"
+      >
+        <source src="./assets/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="splash__overlay">
+        <div class="splash__brand">
+          <div class="splash__logo">List2Stay</div>
+          <div class="splash__tagline">Launching your experience…</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/splash.js"></script>
+  </body>
+</html>

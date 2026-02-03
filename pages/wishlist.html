@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List2Stay — Wishlist</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/boys-hostel.css" />
+  </head>
+  <body class="service-page boys-hostel-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./home.html">
+          <img class="brand__logo" src="../assets/logo.png" alt="List2Stay logo" />
+          <span class="brand__text">List2Stay</span>
+        </a>
+        <nav class="nav">
+          <a href="./home.html#features">Features</a>
+          <a href="./home.html#about">About</a>
+          <a href="./home.html#contact">Contact</a>
+          <a href="./wishlist.html" class="nav-wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            Wishlist
+          </a>
+        </nav>
+        <a class="btn btn--ghost header-login" href="./login.html">Login</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="./home.html#features">Features</a>
+            <a href="./home.html#about">About</a>
+            <a href="./home.html#contact">Contact</a>
+            <a href="./login.html" class="mobile-login">Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="section hero service-hero">
+        <div class="section__inner">
+          <h1>My Wishlist</h1>
+          <p class="muted">
+            Your saved rooms and accommodations. Browse and manage your favorite listings.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <!-- Empty state (shown when wishlist is empty) -->
+          <div id="wishlistEmpty" class="wishlist-empty" style="display: none;">
+            <div class="wishlist-empty__icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="wishlist-empty__title">Your wishlist is empty</h2>
+            <p class="muted wishlist-empty__text">
+              Start exploring rooms and add your favorites to wishlist.
+            </p>
+            <a href="./home.html#features" class="btn btn--primary">Browse Rooms</a>
+          </div>
+
+          <!-- Wishlist items container -->
+          <div class="cards product-grid" id="wishlistItems"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner muted">
+        © <span id="year"></span> List2Stay. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../js/wishlist.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+[
+  {
+    "name": "2 BHK Family Apartment",
+    "area": "Family Enclave",
+    "price": 17000,
+    "sharing": 2,
+    "subtitle": "Family Enclave \u2022 Park facing",
+    "features": ["2 bedrooms", "Park view balcony", "Kids play area", "Gated community"],
+    "tag": "Family fav"
+  },
+  {
+    "name": "3 BHK Green Residency",
+    "area": "Green Residency",
+    "price": 22000,
+    "sharing": 3,
+    "subtitle": "Green Residency \u2022 Calm neighbourhood",
+    "features": ["3 bedrooms", "Garden view", "Lift & parking", "24x7 security"],
+    "tag": "Spacious"
+  },
+  {
+    "name": "1 BHK Park View",
+    "area": "Green Courtyard",
+    "price": 13000,
+    "sharing": 1,
+    "subtitle": "Green Courtyard \u2022 Ideal for small family",
+    "features": ["1 BHK", "Park facing balcony", "Ground floor", "Pet friendly"],
+    "tag": "Park view"
+  },
+  {
+    "name": "Family Suite in Hostel",
+    "area": "City Heights",
+    "price": 15000,
+    "sharing": 3,
+    "subtitle": "City Heights \u2022 Family suite in hostel",
+    "features": ["2 rooms + hall", "Common kitchen", "Wi\u2011Fi", "Housekeeping"],
+    "tag": "Suite"
+  },
+  {
+    "name": "2 BHK Near School",
+    "area": "School Road",
+    "price": 16000,
+    "sharing": 2,
+    "subtitle": "School Road \u2022 Close to schools",
+    "features": ["2 bedrooms", "School within 500m", "Play area", "Safe locality"],
+    "tag": "Near school"
+  },
+  {
+    "name": "3 BHK Corner Flat",
+    "area": "City Center",
+    "price": 23000,
+    "sharing": 3,
+    "subtitle": "City Center \u2022 Corner flat with ventilation",
+    "features": ["3 bedrooms", "Corner flat", "Good natural light", "Lift & parking"],
+    "tag": "Corner"
+  },
+  {
+    "name": "1 BHK Budget Family Stay",
+    "area": "Old Town",
+    "price": 9000,
+    "sharing": 1,
+    "subtitle": "Old Town \u2022 Budget friendly",
+    "features": ["1 BHK", "Market nearby", "Public transport close", "Basic furnishings"],
+    "tag": "Budget"
+  },
+  {
+    "name": "Row House Family Stay",
+    "area": "Suburb Lane",
+    "price": 20000,
+    "sharing": 3,
+    "subtitle": "Suburb Lane \u2022 Row house",
+    "features": ["3 bedrooms", "Small backyard", "Parking", "Quiet area"],
+    "tag": "Row house"
+  },
+  {
+    "name": "2 BHK with Study",
+    "area": "University Lane",
+    "price": 18500,
+    "sharing": 2,
+    "subtitle": "University Lane \u2022 Extra study room",
+    "features": ["2 bedrooms + study", "Ideal for kids", "Library nearby", "Safe locality"],
+    "tag": "Study room"
+  },
+  {
+    "name": "Ground Floor Family Apartment",
+    "area": "Ring Road",
+    "price": 15000,
+    "sharing": 2,
+    "subtitle": "Ring Road \u2022 Easy access",
+    "features": ["Ground floor", "Lift", "Parking", "Near supermarket"],
+    "tag": "Easy access"
+  },
+  {
+    "name": "3 BHK with Terrace",
+    "area": "Skyline Road",
+    "price": 25000,
+    "sharing": 3,
+    "subtitle": "Skyline Road \u2022 Terrace access",
+    "features": ["3 bedrooms", "Terrace for family time", "Great view", "Secure building"],
+    "tag": "Terrace"
+  },
+  {
+    "name": "Compact 2 BHK",
+    "area": "Market Area",
+    "price": 14000,
+    "sharing": 2,
+    "subtitle": "Market Area \u2022 Everything nearby",
+    "features": ["2 bedrooms", "Compact layout", "Shops downstairs", "Good connectivity"],
+    "tag": "Compact"
+  },
+  {
+    "name": "Family Room in Hostel",
+    "area": "Hostel Road",
+    "price": 11000,
+    "sharing": 3,
+    "subtitle": "Hostel Road \u2022 Family hostel room",
+    "features": ["Large room", "Attached washroom", "Common kitchen", "Housekeeping"],
+    "tag": "Hostel"
+  },
+  {
+    "name": "2 BHK Lakeside",
+    "area": "Lake View",
+    "price": 19000,
+    "sharing": 2,
+    "subtitle": "Lake View \u2022 Scenic view",
+    "features": ["2 bedrooms", "Lake facing balcony", "Jogging track", "Kids area"],
+    "tag": "Lake view"
+  },
+  {
+    "name": "1 BHK Service Apartment",
+    "area": "Business District",
+    "price": 18000,
+    "sharing": 1,
+    "subtitle": "Business District \u2022 Service apartment",
+    "features": ["Housekeeping", "Wi\u2011Fi & TV", "Kitchenette", "Near offices"],
+    "tag": "Service"
+  },
+  {
+    "name": "2 BHK Garden Facing",
+    "area": "Green Enclave",
+    "price": 17500,
+    "sharing": 2,
+    "subtitle": "Green Enclave \u2022 Garden view",
+    "features": ["2 bedrooms", "Garden view balcony", "Kids play area", "Parking"],
+    "tag": "Garden"
+  }
+]
+

@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Premium Girls 3 Sharing",
+    "area": "City Center",
+    "price": 5000,
+    "sharing": 3,
+    "subtitle": "City Center \u2022 Wi\u2011Fi \u2022 Housekeeping",
+    "features": ["3 beds per room", "Attached washroom", "High\u2011speed Wi\u2011Fi", "Daily cleaning"],
+    "tag": "Popular"
+  },
+  {
+    "name": "Girls 2 Sharing Near Campus",
+    "area": "College Road",
+    "price": 6500,
+    "sharing": 2,
+    "subtitle": "College Road \u2022 Walking distance to campus",
+    "features": ["2 beds per room", "All meals included", "Security & CCTV", "Laundry service"],
+    "tag": "Student fav"
+  },
+  {
+    "name": "Girls Single Occupancy",
+    "area": "Premium Zone",
+    "price": 9500,
+    "sharing": 1,
+    "subtitle": "Premium Zone \u2022 Fully furnished",
+    "features": ["Private room with study desk", "Air\u2011conditioned", "Common lounge access", "On\u2011call support"],
+    "tag": "Limited"
+  },
+  {
+    "name": "Budget 4 Sharing Girls",
+    "area": "Old Town",
+    "price": 4000,
+    "sharing": 4,
+    "subtitle": "Old Town \u2022 Basic amenities",
+    "features": ["4 beds per room", "Common washroom", "Free Wi\u2011Fi", "Weekly cleaning"],
+    "tag": "Budget"
+  },
+  {
+    "name": "Girls AC 3 Sharing",
+    "area": "City Center",
+    "price": 5800,
+    "sharing": 3,
+    "subtitle": "City Center \u2022 AC \u2022 Study table",
+    "features": ["3 beds per room", "Air\u2011conditioned", "Wardrobes", "24x7 water supply"],
+    "tag": "Comfort"
+  },
+  {
+    "name": "Girls Non-AC 2 Sharing",
+    "area": "Hostel Road",
+    "price": 4700,
+    "sharing": 2,
+    "subtitle": "Hostel Road \u2022 Near coaching institutes",
+    "features": ["2 beds per room", "Ceiling fan", "Bike parking", "RO drinking water"],
+    "tag": "Value"
+  },
+  {
+    "name": "Deluxe Girls Single",
+    "area": "Business District",
+    "price": 11500,
+    "sharing": 1,
+    "subtitle": "Business District \u2022 Premium",
+    "features": ["Queen size bed", "Smart TV & Wi\u2011Fi", "Attached balcony", "Daily housekeeping"],
+    "tag": "Premium"
+  },
+  {
+    "name": "Twin Sharing with Meals (Girls)",
+    "area": "IT Park",
+    "price": 7300,
+    "sharing": 2,
+    "subtitle": "IT Park \u2022 3 meals included",
+    "features": ["2 beds per room", "Breakfast, lunch, dinner", "Laundry included", "Security & CCTV"],
+    "tag": "Meals plan"
+  },
+  {
+    "name": "Girls Economy 3 Sharing",
+    "area": "Market Area",
+    "price": 4200,
+    "sharing": 3,
+    "subtitle": "Market Area \u2022 Walk to shops",
+    "features": ["3 beds per room", "Shared cupboard", "Common TV room", "Weekly linen change"],
+    "tag": "Economy"
+  },
+  {
+    "name": "Girls AC 4 Sharing",
+    "area": "Ring Road",
+    "price": 5200,
+    "sharing": 4,
+    "subtitle": "Ring Road \u2022 AC dorm style",
+    "features": ["4 beds per room", "Air\u2011conditioned dorm", "Locker facility", "Common study hall"],
+    "tag": "Group"
+  },
+  {
+    "name": "Girls Studio Single",
+    "area": "City Heights",
+    "price": 9800,
+    "sharing": 1,
+    "subtitle": "City Heights \u2022 Kitchenette",
+    "features": ["Private studio layout", "Small kitchen space", "Fridge & induction", "Attached washroom"],
+    "tag": "Studio"
+  },
+  {
+    "name": "Girls Hostel with Gym",
+    "area": "Sports Complex",
+    "price": 7900,
+    "sharing": 2,
+    "subtitle": "Sports Complex \u2022 Fitness focused",
+    "features": ["2 beds per room", "On\u2011site gym access", "Jogging track", "Healthy meal options"],
+    "tag": "Fitness"
+  },
+  {
+    "name": "Girls City View 3 Sharing",
+    "area": "Skyline Road",
+    "price": 6400,
+    "sharing": 3,
+    "subtitle": "Skyline Road \u2022 Balcony view",
+    "features": ["3 beds per room", "City skyline balcony", "High\u2011speed Wi\u2011Fi", "Daily cleaning"],
+    "tag": "View"
+  },
+  {
+    "name": "Library Access Twin (Girls)",
+    "area": "University Lane",
+    "price": 7000,
+    "sharing": 2,
+    "subtitle": "University Lane \u2022 Study friendly",
+    "features": ["2 beds per room", "Reading lamps & desks", "Access to private library", "Quiet hours enforced"],
+    "tag": "Study"
+  },
+  {
+    "name": "Courtyard Girls Single",
+    "area": "Green Courtyard",
+    "price": 9000,
+    "sharing": 1,
+    "subtitle": "Green Courtyard \u2022 Calm & quiet",
+    "features": ["Private single room", "Garden courtyard view", "Attached washroom", "Evening tea & snacks"],
+    "tag": "Calm"
+  },
+  {
+    "name": "Terrace Lounge Girls Room",
+    "area": "Rooftop Block",
+    "price": 9500,
+    "sharing": 2,
+    "subtitle": "Rooftop Block \u2022 Open terrace access",
+    "features": ["2 beds per room", "Access to common terrace lounge", "Evening hangout space", "Wi\u2011Fi & charging points"],
+    "tag": "Social"
+  }
+]
+

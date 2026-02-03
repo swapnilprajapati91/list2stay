@@ -1,0 +1,147 @@
+[
+  {
+    "name": "1 BHK City Center Apartment",
+    "area": "City Center",
+    "price": 12000,
+    "sharing": 1,
+    "subtitle": "City Center \u2022 Furnished \u2022 Balcony",
+    "features": ["1 bedroom + hall + kitchen", "Furnished with sofa & bed", "Balcony with city view", "Lift & security"],
+    "tag": "Popular"
+  },
+  {
+    "name": "2 BHK Near Tech Park",
+    "area": "Tech Park",
+    "price": 18000,
+    "sharing": 2,
+    "subtitle": "Near Tech Park \u2022 Ideal for flatmates",
+    "features": ["2 bedrooms", "Modular kitchen", "Covered parking", "24x7 security"],
+    "tag": "Tech belt"
+  },
+  {
+    "name": "Studio Apartment Business Hub",
+    "area": "Business District",
+    "price": 10000,
+    "sharing": 1,
+    "subtitle": "Business Hub \u2022 Compact studio",
+    "features": ["Open layout", "Kitchenette", "Work desk", "High-speed Wi\u2011Fi"],
+    "tag": "Solo"
+  },
+  {
+    "name": "3 BHK Family Apartment",
+    "area": "Green Residency",
+    "price": 22000,
+    "sharing": 3,
+    "subtitle": "Green Residency \u2022 Family friendly",
+    "features": ["3 bedrooms", "Kids play area", "Park facing", "Gated community"],
+    "tag": "Family"
+  },
+  {
+    "name": "2 BHK Semi-furnished",
+    "area": "Ring Road",
+    "price": 15000,
+    "sharing": 2,
+    "subtitle": "Ring Road \u2022 Semi-furnished",
+    "features": ["Wardrobes & basic furniture", "Lift", "Car parking", "24x7 water"],
+    "tag": "Semi-furnished"
+  },
+  {
+    "name": "1 RK Budget Apartment",
+    "area": "Old Town",
+    "price": 7000,
+    "sharing": 1,
+    "subtitle": "Old Town \u2022 Budget",
+    "features": ["Room + kitchen corner", "Basic furnishings", "Near market", "Good for students"],
+    "tag": "Budget"
+  },
+  {
+    "name": "Penthouse 2 BHK with Terrace",
+    "area": "Skyline Road",
+    "price": 26000,
+    "sharing": 2,
+    "subtitle": "Skyline Road \u2022 Private terrace",
+    "features": ["2 BHK", "Large terrace", "City view", "Ideal for small parties"],
+    "tag": "Terrace"
+  },
+  {
+    "name": "Service Apartment",
+    "area": "IT Park",
+    "price": 20000,
+    "sharing": 2,
+    "subtitle": "IT Park \u2022 Weekly housekeeping",
+    "features": ["Fully furnished", "Housekeeping included", "Wi\u2011Fi & TV", "Short/long stay"],
+    "tag": "Service"
+  },
+  {
+    "name": "Compact 2 BHK",
+    "area": "City Heights",
+    "price": 16000,
+    "sharing": 2,
+    "subtitle": "City Heights \u2022 Compact & modern",
+    "features": ["2 bedrooms", "Modern interiors", "Lift & security", "Nearby mall"],
+    "tag": "Compact"
+  },
+  {
+    "name": "Ground Floor 1 BHK",
+    "area": "Green Courtyard",
+    "price": 11000,
+    "sharing": 1,
+    "subtitle": "Green Courtyard \u2022 Easy access",
+    "features": ["Ground floor", "Garden access", "Pet friendly", "Calm locality"],
+    "tag": "Ground floor"
+  },
+  {
+    "name": "3 BHK Sharing for Friends",
+    "area": "College Road",
+    "price": 21000,
+    "sharing": 3,
+    "subtitle": "College Road \u2022 Ideal for 3 friends",
+    "features": ["3 bedrooms", "Close to colleges", "Shared rent", "Wi\u2011Fi ready"],
+    "tag": "Friends"
+  },
+  {
+    "name": "Luxury 2 BHK Apartment",
+    "area": "Premium Zone",
+    "price": 28000,
+    "sharing": 2,
+    "subtitle": "Premium Zone \u2022 Clubhouse access",
+    "features": ["Luxury interiors", "Clubhouse & gym", "Swimming pool", "Reserved parking"],
+    "tag": "Luxury"
+  },
+  {
+    "name": "Studio for Working Professionals",
+    "area": "Business District",
+    "price": 13000,
+    "sharing": 1,
+    "subtitle": "Business District \u2022 Walk to office",
+    "features": ["Furnished studio", "Work desk & chair", "Wi\u2011Fi", "Near metro"],
+    "tag": "Pro"
+  },
+  {
+    "name": "2 BHK Park Facing",
+    "area": "Family Enclave",
+    "price": 17500,
+    "sharing": 2,
+    "subtitle": "Family Enclave \u2022 Park facing",
+    "features": ["2 bedrooms", "View to park", "Kids friendly", "Quiet area"],
+    "tag": "Park view"
+  },
+  {
+    "name": "1 BHK Near Market",
+    "area": "Market Area",
+    "price": 11500,
+    "sharing": 1,
+    "subtitle": "Market Area \u2022 Everything nearby",
+    "features": ["1 BHK", "Shops downstairs", "Public transport close", "Ideal for couples"],
+    "tag": "Central"
+  },
+  {
+    "name": "Loft Style Studio",
+    "area": "Rooftop Block",
+    "price": 15000,
+    "sharing": 1,
+    "subtitle": "Rooftop Block \u2022 Loft style",
+    "features": ["Open loft", "Modern design", "Terrace access", "Good natural light"],
+    "tag": "Loft"
+  }
+]
+

@@ -1,0 +1,108 @@
+/**
+ * Component Styles
+ * Reusable UI components (buttons, cards, forms, etc.)
+ */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--stroke);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--fg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform var(--transition-fast), background var(--transition-fast),
+    border-color var(--transition-fast);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.btn:active {
+  transform: translateY(0px);
+}
+
+.btn--primary {
+  border-color: rgba(109, 94, 246, 0.65);
+  background: linear-gradient(135deg, rgba(109, 94, 246, 0.95),
+      rgba(61, 215, 217, 0.55));
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Cards */
+.card {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
+    width var(--transition-normal);
+}
+
+.search-bar:focus-within {
+  border-color: rgba(109, 94, 246, 0.9);
+  box-shadow: 0 0 0 1px rgba(109, 94, 246, 0.4);
+}
+
+.search-input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  background: transparent;
+  color: var(--fg);
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(238, 242, 255, 0.6);
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--fg);
+}
