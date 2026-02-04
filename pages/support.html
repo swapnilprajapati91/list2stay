@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — List2Stay</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/support.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+  </head>
+  <body class="support-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./home.html">
+          <img class="brand__logo" src="../assets/logo.png" alt="List2Stay logo" />
+          <span class="brand__text">List2Stay</span>
+        </a>
+        <nav class="nav">
+          <a href="./home.html#features">Features</a>
+          <a href="./home.html#about">About</a>
+          <a href="./home.html#contact">Contact</a>
+          <a href="./wishlist.html" class="nav-wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            Wishlist
+          </a>
+          <div class="search-bar" id="searchBar">
+            <input type="text" class="search-input" placeholder="Search..." id="searchInput" />
+            <button type="button" class="search-btn" id="searchToggle" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a class="btn btn--ghost header-login" href="./login.html">Login</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="./home.html#features">Features</a>
+            <a href="./home.html#about">About</a>
+            <a href="./home.html#contact">Contact</a>
+            <a href="./support.html" class="mobile-nav-active">Support</a>
+            <a href="./login.html" class="mobile-login">Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <!-- Scroll Progress Indicator -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+
+      <!-- Hero Section -->
+      <section class="support-hero">
+        <div class="section__inner">
+          <div class="support-hero__content fade-in-up">
+            <h1 class="support-hero__title">How Can We Help You?</h1>
+            <p class="support-hero__subtitle muted">
+              We're here 24/7 to assist you with any questions or issues you may have
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Contact Methods -->
+      <section class="support-contact-section">
+        <div class="section__inner">
+          <h2 class="section-title fade-in">Get In Touch</h2>
+          <div class="support-contact-grid">
+            <a href="mailto:support@list2stay.com" class="support-contact-card fade-in">
+              <div class="support-contact-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="support-contact-card__title">Email Support</h3>
+              <p class="support-contact-card__text muted">support@list2stay.com</p>
+              <span class="support-contact-card__arrow">→</span>
+            </a>
+
+            <a href="tel:+910000000000" class="support-contact-card fade-in">
+              <div class="support-contact-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="support-contact-card__title">Call Us</h3>
+              <p class="support-contact-card__text muted">+91 00000 00000</p>
+              <span class="support-contact-card__arrow">→</span>
+            </a>
+
+            <a href="https://wa.me/910000000000" target="_blank" class="support-contact-card fade-in">
+              <div class="support-contact-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <h3 class="support-contact-card__title">WhatsApp</h3>
+              <p class="support-contact-card__text muted">Chat with us instantly</p>
+              <span class="support-contact-card__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="support-faq-section">
+        <div class="section__inner">
+          <div class="support-faq-header fade-in">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="support-faq-subtitle muted">
+              Find quick answers to common questions
+            </p>
+          </div>
+
+          <div class="support-faq-list">
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>How do I search for rooms?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  You can search for rooms by location using the search bar on the home page. You can also filter by type (Boys Hostel, Girls Hostel, Apartment, Family Stay, or All in One) and use the "Near by me" feature to find accommodations close to your location.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>How do I contact a property owner?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  Once you find a room you're interested in, click on it to view details. You'll find the owner's contact information (phone number and/or email) on the room details page. You can contact them directly to schedule a visit or ask questions.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>Are the listings verified?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  Yes! All properties listed on List2Stay are verified for authenticity. We verify property details, owner information, and pricing to ensure you get accurate and reliable information.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>How do I save rooms to my wishlist?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  Click the heart icon on any room listing to add it to your wishlist. You can view all your saved rooms by clicking the "Wishlist" option in the navigation menu. Make sure you're logged in to save your wishlist across devices.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>Is there a fee to use List2Stay?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  No, List2Stay is completely free for users searching for accommodations. We provide transparent pricing with no hidden costs. You only pay the rent directly to the property owner.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>What should I do if I find incorrect information?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  If you notice any incorrect information about a property, please contact us immediately at support@list2stay.com or use the WhatsApp support. We'll verify and update the information as soon as possible.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-faq-item fade-in">
+              <button class="support-faq-question" type="button" aria-expanded="false">
+                <span>How do I list my property on List2Stay?</span>
+                <svg class="support-faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="support-faq-answer">
+                <p class="muted">
+                  Property owners can list their accommodations by contacting us at support@list2stay.com or calling +91 00000 00000. Our team will guide you through the verification and listing process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="support-form-section">
+        <div class="section__inner">
+          <div class="support-form-header fade-in">
+            <h2 class="section-title">Send Us a Message</h2>
+            <p class="support-form-subtitle muted">
+              Can't find what you're looking for? Drop us a message and we'll get back to you soon.
+            </p>
+          </div>
+
+          <form class="support-form fade-in" id="supportForm">
+            <div class="support-form-row">
+              <div class="support-form-group">
+                <label for="supportName" class="support-form-label">Name</label>
+                <input 
+                  type="text" 
+                  id="supportName" 
+                  name="name" 
+                  class="support-form-input" 
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="support-form-group">
+                <label for="supportEmail" class="support-form-label">Email</label>
+                <input 
+                  type="email" 
+                  id="supportEmail" 
+                  name="email" 
+                  class="support-form-input" 
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="support-form-group">
+              <label for="supportSubject" class="support-form-label">Subject</label>
+              <input 
+                type="text" 
+                id="supportSubject" 
+                name="subject" 
+                class="support-form-input" 
+                placeholder="What is this regarding?"
+                required
+              />
+            </div>
+
+            <div class="support-form-group">
+              <label for="supportMessage" class="support-form-label">Message</label>
+              <textarea 
+                id="supportMessage" 
+                name="message" 
+                class="support-form-textarea" 
+                rows="6"
+                placeholder="Tell us how we can help you..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary support-form-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner muted">
+        © <span id="year"></span> List2Stay. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Set current year
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/support.js"></script>
+  </body>
+</html>
